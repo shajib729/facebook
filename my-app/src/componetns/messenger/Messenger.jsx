@@ -21,7 +21,7 @@ const Messenger = () => {
     const [onlineUsers, setOnlineUsers] = useState()    
     const [arrivalMessage, setArrivalMessage] = useState()    
     const { user, isFecthing, dispatch } = useContext(AuthContext)
-    let [socket,setSocket]=useState(io("http://localhost:5000"))
+    let [socket,setSocket]=useState(io("https://shajib-chat.herokuapp.com/"))
     
     const handleSubmit =async (e) => {
         e.preventDefault()
