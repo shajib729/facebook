@@ -11,9 +11,8 @@ const ChatOnline = ({ onlineUsers, user }) => {
         })
         const data = await res.json()
         console.log(data);
-        setOnlineFriends(data?.filter(e=>onlineUsers?.includes(e._id)));
-        // console.log(data.map(e=>e._id).filter(i=>onlineUsers.includes(i)))
-        // data.map(e=>e.id).filter(i=>onlineUsers.includes(i))
+        // setOnlineFriends(data?.filter(e=>onlineUsers?.includes(e._id)))
+        setOnlineFriends(data?.filter(e=>onlineUsers?.includes(e._id)))
     }
 
     useEffect(() => {

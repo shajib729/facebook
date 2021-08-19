@@ -8,6 +8,7 @@ const morgan = require("morgan")
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const fileUpload = require('express-fileupload');
+const path=require('path')
 
 // internal import
 const router=require('./routes/user.js')
@@ -34,7 +35,11 @@ app.use('/api',require('./routes/messages'))
 
 // socket api started 
 const http=require('http').createServer(app)
-const io = require('socket.io')(http)
+const io = require('socket.io')(http, {
+    cors: {
+        origin: "/",
+    }
+})
 
 //TODO: let socketsConnected = new Set()
 
@@ -91,9 +96,10 @@ io.on('connection', function (socket) {
 })
 
 // 3: setup in heroku 
-if (process.env.NODE_ENV == 'production') {
+if (process.env.NODE_ENV != 'production') {
+    console.log(path.resolve(__dirname,"my-app",'build','index.html'));
     app.use(express.static(path.join(__dirname,"/my-app/build/")))
-    app.get('*', (req, res) => {
+    app.get('/*', (req, res) => {
         res.sendFile(path.resolve(__dirname,"my-app",'build','index.html'))
     })
 }

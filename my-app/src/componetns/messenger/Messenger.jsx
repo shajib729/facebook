@@ -21,7 +21,7 @@ const Messenger = () => {
     const [onlineUsers, setOnlineUsers] = useState()    
     const [arrivalMessage, setArrivalMessage] = useState()    
     const { user, isFecthing, dispatch } = useContext(AuthContext)
-    let [socket,setSocket]=useState(io("https://shajib-chat.herokuapp.com/"))
+    let [socket,setSocket]=useState(io("/"))
     
     const handleSubmit =async (e) => {
         e.preventDefault()
@@ -111,6 +111,7 @@ const Messenger = () => {
 
       //get message
       socket.on("getMessage", (data) => {
+        //   console.log(data);
           setArrivalMessage({
               senderId: data.senderId,
               text: data.text,
@@ -125,8 +126,8 @@ const Messenger = () => {
   }, [socket]);
     
     useEffect(() => {
-        // console.log(arrivalMessage);
-        arrivalMessage && conversations?.members?.includes(arrivalMessage.sender)
+        console.log(arrivalMessage);
+        arrivalMessage && conversations?.members?.includes(arrivalMessage.senderId)
         messages?.length && setMessages([...messages, arrivalMessage])
         dispatch({type:"RE_RENDER",payload:Date.now()})
     }, [arrivalMessage])
