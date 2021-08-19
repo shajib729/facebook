@@ -1,0 +1,162 @@
+.messengerContainer{
+    display: flex;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+
+    // chat menu 
+    .chatMenu{
+        flex: 3;
+        box-shadow: 5px 0 5px #00000008;
+        border-right: 1px solid #e0e0e0;
+        overflow-y: scroll;
+
+        .chatMenuWrapper{
+            padding: 10px;
+            height: 100%;
+            margin-top: 0px;
+
+            .chatLogo{
+                margin-bottom: 10px;
+            }
+
+            .searchMessenger{
+                font-size: 16px;
+                width: 100%;
+                border: none;
+                outline: none;
+                background: #e9f9ff;
+                padding: 8px 20px;
+                border-radius: 50px;
+                color: #383838;
+                box-shadow: 0 0 3px #0000001c;
+                margin-bottom: 20px;
+            }
+
+            .navActive{
+                background: #0000001f;
+                display: block;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    // chat Box 
+    .chatBox{
+        flex: 6;
+        // overflow-y: scroll;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        // chat box top 
+        .chatBoxTop{
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.057);
+            // border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+            width: 100%;
+            overflow: hidden;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+
+                .messageTopWrapper{
+                    display: flex;
+                    padding: 10px 15px;
+
+                    .messageTopImg{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-right: 10px;
+                    }
+
+                    .messageTopInfo{
+                        display: flex;
+                        flex-direction: column;
+
+                        .messageTopName{
+                            font-weight: 500;
+                        }
+
+                        .messageTopStatus{
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+        }
+
+        // chat box middle
+        .messages{
+            padding-top: 10px;
+            flex:1;
+            overflow-y: scroll;
+            scroll-behavior: smooth !important;
+        }
+
+        // chat box bottom input 
+        .chatBoxBottom{
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.057);
+            padding: 10px;
+            // position: relative;
+
+            .chatBoxInput{
+                border: none;
+                outline: none;
+                padding: 8px 45px 8px 15px;
+                font-size: 16px;
+                border: 1px solid #e0e0e0;
+                border-radius: 50px;
+                background: #dadada6e;
+                width: 100%;
+            }
+
+            .submitButton{
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+                color: #1877f2;
+            }
+        }
+
+        .noChatUser{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 0 50px;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            opacity: .2;
+            text-align: center;
+
+            @media (max-width:768px) {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    // chat Online 
+    .chatOnline{
+        flex: 3;
+        overflow-y: scroll;
+        padding:10px 10px;
+        box-shadow: -5px 0 15px #00000015;
+        border-right: 1px solid #e0e0e0;
+
+        .chatOnlineWrapper{
+            padding: 10px;
+            height: 100%;
+        }
+    }
+}

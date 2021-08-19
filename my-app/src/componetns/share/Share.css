@@ -1,0 +1,98 @@
+.shareContainer {
+  max-width: 100%;
+  min-height: 130px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 7px #0000001f;
+          box-shadow: 0 0 7px #0000001f;
+}
+
+.shareContainer .shareWrapper .shareTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shareContainer .shareWrapper .shareTop .shareTopProfile {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.shareContainer .shareWrapper .shareTop .shareInput {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  width: calc(100% - 50px);
+  margin-left: 15px;
+  border: 1px solid lightgray;
+  padding: 7px 15px;
+  font-size: 16px;
+}
+
+.shareContainer .shareWrapper .shareHr {
+  margin: 10px;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions .shareOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px;
+  border-radius: 7px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions .shareOption:hover {
+  background: #e4e4e4;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions .shareOption .shareIcon {
+  margin-right: 10px;
+  font-size: 18px !important;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions .shareOption.hide1 {
+  display: none;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions button.shareButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #16c116;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 5px;
+  font-size: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.shareContainer .shareWrapper .shareBottom .shareOptions button.shareButton:hover {
+  background-color: black;
+}
+/*# sourceMappingURL=Share.css.map */

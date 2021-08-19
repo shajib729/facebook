@@ -1,0 +1,145 @@
+.loginContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loginWrapper{
+        width: 70%;
+        height: 70%;
+        display: flex;
+
+        @media (max-width:840px) {
+            width: 90%;
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .loginLeft{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            @media (max-width:768px) {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .loginLogo{
+                font-size: 50px;
+                font-weight: 700;
+                color: #177eee;
+                margin-bottom: 10px;
+            }
+    
+            .loginDesc{
+                font-size: 24px;
+            }
+        }
+
+        .loginRight{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .loginBox{
+                text-align: center;
+                padding: 40px 40px;
+                background: white;
+                box-shadow: 0 0 10px #00000011;
+                border-radius: 10px;
+
+                form{
+                    
+                    &>div{
+                        width: 100%;
+                        margin: auto;
+                        margin-bottom:30px; 
+                        position: relative; 
+                        
+                        &>div{
+                            width: 100%;
+                        }
+                    
+                        .MuiInputLabel-outlined {
+                            transform: translate(14px, 15px) scale(1) !important;
+                        }
+                                            
+                        .MuiInputLabel-outlined.MuiInputLabel-shrink {
+                            transform: translate(14px, -6px) scale(.75) !important;
+                        }
+
+                        .MuiOutlinedInput-input {
+                            padding: 12.5px 14px !important;
+                        }
+
+                        input#outlined-password-input{
+                            padding-right: 50px;
+                        }
+
+                        label.MuiFormControlLabel-root{
+                            position: absolute;
+                            right: -5px;
+
+                            .MuiCheckbox-colorSecondary.Mui-checked {
+                                color: #545454;
+                            }
+                        }
+                    }
+
+                    input.loginButton {
+                        width: 100%;
+                        padding: 10px;
+                        background: #177eee;
+                        color: white;
+                        font-size: 18px;
+                        border: none;
+                        outline: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .loginForgot{
+                    color:#177eee ;
+                    cursor: pointer;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                hr{
+                    margin:10px 0 20px 0;
+                }
+
+                a.newRegisterButton {
+                    display: block;
+                    background: #42b72a;
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 18px;
+                    cursor: pointer;
+                    width: 70%;
+                    margin: auto;
+                    
+                    @media (max-width:900px) {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+
+

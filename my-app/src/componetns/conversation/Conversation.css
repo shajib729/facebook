@@ -1,0 +1,32 @@
+.conversationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.conversationContainer:hover {
+  background-color: #0000000f;
+}
+
+.conversationContainer .conversationImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.conversationContainer .coversationName {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1c1c1c;
+}
+/*# sourceMappingURL=Conversation.css.map */

@@ -1,0 +1,11 @@
+.homeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body {
+  background-color: #F2F6FB !important;
+}
+/*# sourceMappingURL=home.css.map */

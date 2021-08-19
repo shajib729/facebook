@@ -1,0 +1,88 @@
+.shareContainer{
+    max-width: 100%;
+    min-height: 130px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 0 7px #0000001f;
+
+    .shareWrapper{
+
+        .shareTop{
+            display: flex;
+            align-items: center;
+
+            .shareTopProfile{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .shareInput{
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                width: calc(100% - 50px);
+                margin-left: 15px;
+                border: 1px solid lightgray;
+                padding:7px 15px;
+                font-size: 16px;
+            }
+        }
+
+        .shareHr{
+            margin: 10px;
+        }
+
+        .shareBottom{
+            // padding: 10px;
+
+            .shareOptions{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-right: 15px;
+                cursor: pointer;
+
+                .shareOption {
+                    display: flex;
+                    align-items: center;
+                    padding: 6px;
+                    border-radius: 7px;
+                    transition: .3s;
+
+                    &:hover{
+                        background: #e4e4e4;
+                    }
+
+                    .shareIcon{
+                        margin-right: 10px;
+                        font-size: 18px !important;
+                    }
+                }
+
+                .shareOption.hide1{
+                    display: none;
+                }
+
+                button.shareButton {
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    background: #16c116;
+                    color: white;
+                    padding: 5px 14px;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    transition: .3s;
+
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+
+}

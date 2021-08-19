@@ -1,0 +1,119 @@
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.topbarContainer .topbarLeft {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.topbarContainer .topbarLeft .logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.topbarContainer .topbarCenter {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.topbarContainer .topbarCenter .searchBar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden !important;
+}
+
+.topbarContainer .topbarCenter .searchBar .searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.topbarContainer .topbarCenter .searchBar .searchInput {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.topbarContainer .topbarRight {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.topbarContainer .topbarRight .topBarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarContainer .topbarRight .topBarIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbarContainer .topbarRight .topBarIcons .topBarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+
+.topbarContainer .topbarRight .topBarIcons .topBarIconBadge {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+}
+
+.topbarContainer .topbarRight .topBarImg {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Topbar.css.map */

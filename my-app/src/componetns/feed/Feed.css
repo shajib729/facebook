@@ -1,0 +1,12 @@
+.feedContainer {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  padding: 20px;
+}
+
+.feedContainer .feedWrapper {
+  max-width: 520px;
+  margin: auto;
+}
+/*# sourceMappingURL=Feed.css.map */

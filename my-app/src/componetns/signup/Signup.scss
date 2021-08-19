@@ -1,0 +1,134 @@
+   // ######REGISTRATION###### */}
+   .signupContainer{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(140, 140, 140, 0.837);
+    z-index: 9;
+
+    .signupBox{
+        max-width: 440px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        position:relative;
+
+        .hideSignup{
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+        }
+
+        .signupTitle{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .signupDesc{
+
+        }
+
+        hr{
+            margin: 20px 0;
+        }
+
+        .signupForm{
+            width: 100%;
+
+            .fields{
+                width: 100%;
+                margin: auto;
+                margin-bottom:15px; 
+                position: relative;
+                display: flex; 
+                
+                &>div{
+                    width: 100%;
+                    position: relative;
+
+                    input{
+                        margin-right: 50px;
+                    }
+                }
+            
+                .MuiInputLabel-outlined {
+                    transform: translate(14px, 15px) scale(1) !important;
+                }
+                                    
+                .MuiInputLabel-outlined.MuiInputLabel-shrink {
+                    transform: translate(14px, -6px) scale(.75) !important;
+                }
+
+                .MuiOutlinedInput-input {
+                    padding: 12.5px 14px !important;
+                }
+
+                input#outlined-password-input{
+                    padding-right: 50px;
+                }
+
+                // label.MuiFormControlLabel-root {
+                //     position: absolute;
+                //     right: -5px;
+                // }
+
+                label.MuiFormControlLabel-root{
+                    position: absolute !important;
+                    right: -5px !important;
+
+                    .MuiCheckbox-colorSecondary.Mui-checked {
+                        color: #545454;
+                    }
+                }
+            }
+
+            .birthDay{
+
+                .MuiFormControl-root {
+                    padding: 0 6px;
+                }
+                                    
+                .MuiInputLabel-outlined.MuiInputLabel-shrink {
+                    transform: translate(20px, -5px) scale(.75) !important;
+                }
+
+                input{
+                    margin-right: 0 !important;
+                }
+
+            }
+
+            .signupButton{
+                display:block;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                padding: 10px;
+                width: 60%;
+                background-color:#00a400;
+                color: white;
+                border-radius: 6px;
+                margin: auto;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+// dropdown style 
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded ul{
+    max-height:300px;
+}
+
+// Hide Sign up Popup 
+.signupContainer.hide{
+    display: none;
+}

@@ -1,0 +1,42 @@
+.chatOnlineFriends {
+  margin-top: 15px;
+}
+
+.chatOnlineFriends .chatOnlineFriend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chatOnlineFriends .chatOnlineFriend .chatOnlineImgContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+
+.chatOnlineFriends .chatOnlineFriend .chatOnlineImgContainer .chatOnlineImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.chatOnlineFriends .chatOnlineFriend .chatOnlineImgContainer .chatOnlineBadge {
+  width: 10px;
+  height: 10px;
+  background: limegreen;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=ChatOnline.css.map */

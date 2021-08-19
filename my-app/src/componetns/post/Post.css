@@ -1,0 +1,101 @@
+.postContainer {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.65);
+  margin: 30px 0;
+}
+
+.postContainer .postWrapper {
+  padding: 10px;
+}
+
+.postContainer .postWrapper .postTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.postContainer .postWrapper .postTop .postTopLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postContainer .postWrapper .postTop .postTopLeft .postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.postContainer .postWrapper .postTop .postTopLeft .postUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+  color: black;
+}
+
+.postContainer .postWrapper .postTop .postTopLeft .postDate {
+  font-size: 12px;
+}
+
+.postContainer .postWrapper .postCenter {
+  margin: 20px 0;
+}
+
+.postContainer .postWrapper .postCenter .postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.postContainer .postWrapper .postBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postContainer .postWrapper .postBottom .postBottomLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postContainer .postWrapper .postBottom .postBottomLeft .likeButton {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 5px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+.postContainer .postWrapper .postBottom .postBottomRight .postCommentText {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+}
+/*# sourceMappingURL=Post.css.map */

@@ -1,0 +1,129 @@
+.signupContainer {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(140, 140, 140, 0.837);
+  z-index: 9;
+}
+
+.signupContainer .signupBox {
+  max-width: 440px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.signupContainer .signupBox .hideSignup {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.signupContainer .signupBox .signupTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signupContainer .signupBox hr {
+  margin: 20px 0;
+}
+
+.signupContainer .signupBox .signupForm {
+  width: 100%;
+}
+
+.signupContainer .signupBox .signupForm .fields {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signupContainer .signupBox .signupForm .fields > div {
+  width: 100%;
+  position: relative;
+}
+
+.signupContainer .signupBox .signupForm .fields > div input {
+  margin-right: 50px;
+}
+
+.signupContainer .signupBox .signupForm .fields .MuiInputLabel-outlined {
+  -webkit-transform: translate(14px, 15px) scale(1) !important;
+          transform: translate(14px, 15px) scale(1) !important;
+}
+
+.signupContainer .signupBox .signupForm .fields .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  -webkit-transform: translate(14px, -6px) scale(0.75) !important;
+          transform: translate(14px, -6px) scale(0.75) !important;
+}
+
+.signupContainer .signupBox .signupForm .fields .MuiOutlinedInput-input {
+  padding: 12.5px 14px !important;
+}
+
+.signupContainer .signupBox .signupForm .fields input#outlined-password-input {
+  padding-right: 50px;
+}
+
+.signupContainer .signupBox .signupForm .fields label.MuiFormControlLabel-root {
+  position: absolute !important;
+  right: -5px !important;
+}
+
+.signupContainer .signupBox .signupForm .fields label.MuiFormControlLabel-root .MuiCheckbox-colorSecondary.Mui-checked {
+  color: #545454;
+}
+
+.signupContainer .signupBox .signupForm .birthDay .MuiFormControl-root {
+  padding: 0 6px;
+}
+
+.signupContainer .signupBox .signupForm .birthDay .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  -webkit-transform: translate(20px, -5px) scale(0.75) !important;
+          transform: translate(20px, -5px) scale(0.75) !important;
+}
+
+.signupContainer .signupBox .signupForm .birthDay input {
+  margin-right: 0 !important;
+}
+
+.signupContainer .signupBox .signupForm .signupButton {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+  width: 60%;
+  background-color: #00a400;
+  color: white;
+  border-radius: 6px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded ul {
+  max-height: 300px;
+}
+
+.signupContainer.hide {
+  display: none;
+}
+/*# sourceMappingURL=Signup.css.map */

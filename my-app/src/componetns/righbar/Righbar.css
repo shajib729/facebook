@@ -1,0 +1,169 @@
+.rightbarContainer {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: calc(100vh - 50px);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  overflow-y: scroll;
+}
+
+.rightbarContainer .rightbarWrapper {
+  padding: 20px 20px 0 0;
+}
+
+.rightbarContainer .rightbarWrapper .birthdayContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightbarContainer .rightbarWrapper .birthdayContainer .birthdayImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rightbarContainer .rightbarWrapper .birthdayContainer .birthdayText {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarTitle {
+  margin-bottom: 20px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFriendList {
+  padding: 0;
+  margin: 0;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFriendList .rightbarFriend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFriendList .rightbarFriend .rightbarProfileImagContainer {
+  margin-right: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFriendList .rightbarFriend .rightbarProfileImagContainer .rightbarProfileImg {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFriendList .rightbarFriend .rightbarProfileImagContainer .rightbarOnline {
+  width: 12px;
+  height: 12px;
+  border-radius: 59px;
+  background-color: limegreen;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  border: 2px solid white;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFriendList .rightbarFriend .rightbarUsername {
+  font-weight: 500;
+}
+
+.rightbarContainer .rightbarWrapper .followButton {
+  display: inline-block;
+  background: #1877f2;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding-top: 8px;
+}
+
+.rightbarContainer .rightbarWrapper .followButton svg {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarInfo {
+  margin-bottom: 30px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarInfo .rightbarInfoItem {
+  margin-bottom: 10px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarInfo .rightbarInfoItem .rightbarInfoKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarInfo .rightbarInfoItem .rightbarInfoValue {
+  font-weight: 300;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFollowings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFollowings .rightbarFollowing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFollowings .rightbarFollowing .rightbarFollwingImg {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.rightbarContainer .rightbarWrapper .rightbarFollowings .rightbarFollowing span.rightbarFollowingName {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+/*# sourceMappingURL=Righbar.css.map */
