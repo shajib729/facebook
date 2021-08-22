@@ -31,7 +31,17 @@ app.use(fileUpload());
 app.use('/api',require('./routes/user.js'))
 app.use('/api',require('./routes/post.js'))
 app.use('/api',require('./routes/conversations'))
-app.use('/api',require('./routes/messages'))
+app.use('/api', require('./routes/messages'))
+
+
+// 3: setup in heroku 
+
+// if (process.env.NODE_ENV !== 'production') {
+//     app.use(express.static(path.join(__dirname,"./my-app/build")))
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname, "my-app/build", "index.html"));
+//     })
+// }
 
 // socket api started 
 const http=require('http').createServer(app)
@@ -46,7 +56,7 @@ const io = require('socket.io')(http, {
 let users = [];
 
 const addUser = (userId, socketId) => {
-  !users.some((user) => user.userId === userId) &&
+  !users.some((user) => user.userId == userId) &&
     users.push({ userId, socketId });
 };
 
@@ -71,8 +81,10 @@ io.on('connection', function (socket) {
 
     //take userId and socketId from user
     socket.on("addUser", (userId) => {
+        console.log(userId);
         addUser(userId, socket.id);
         io.emit("getUsers", users);
+        console.log(users);
     });
 
     //send and get message
@@ -94,14 +106,6 @@ io.on('connection', function (socket) {
     })
 
 })
-
-// 3: setup in heroku 
-if (process.env.NODE_ENV == 'production') {
-    app.use(express.static(path.join(__dirname,"/my-app/build/")))
-    app.get('/*', (req, res) => {
-        res.sendFile(path.resolve(__dirname,"my-app",'build','index.html'))
-    })
-}
 
 
 http.listen(port, () => {

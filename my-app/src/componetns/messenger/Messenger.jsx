@@ -9,7 +9,7 @@ import {AuthContext} from '../../context/AuthContext'
 import { NavLink, useParams } from 'react-router-dom'
 import {io} from "socket.io-client";
 
-// const socket = io.connect("http://localhost:5000");
+let socket = io("http://localhost:5000");
 
 const Messenger = () => {
     const { id } = useParams()
@@ -21,7 +21,7 @@ const Messenger = () => {
     const [onlineUsers, setOnlineUsers] = useState()    
     const [arrivalMessage, setArrivalMessage] = useState()    
     const { user, isFecthing, dispatch } = useContext(AuthContext)
-    let [socket,setSocket]=useState(io("/"))
+    // let [socket,setSocket]=useState(io("http://localhost:5000"))
     
     const handleSubmit =async (e) => {
         e.preventDefault()

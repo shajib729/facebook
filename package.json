@@ -7,9 +7,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "clientInstall": "npm install --prefix my-app",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-app && npm run build --prefix my-app"
+    "start": "node server.js",
+    "build": "cd my-app && npm run build",
+    "install-client": "cd my-app && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "author": "shajib",
   "license": "ISC",
